@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST ACM Tech Hub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="d-flex align-items-center justify-content-between px-3 py-2 bg-primary">
+        <div class="logo-section">
+            <img src="https://imgur.com/frE6irY.png" alt="TechNews Logo" class="logo-img">
+        </div>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuDropdown">
+            &#9776; <!-- Hamburger Icon -->
+        </button>
+        
+        <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="menuDropdown">
+            <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="article.html">Articles</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="service.html">Services</a></li>
+                </ul>
+            </div>
+        </div> 
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Our Services</h2>
+            <div class="row g-4">
+                <!-- Seminar Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chalkboard-teacher fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title fw-semibold">Seminars</h5>
+                            <p class="card-text">We organize seminars on emerging IT trends, technologies, and industry insights to enhance learning and professional growth.</p>
+                            <!-- Button to open modal -->
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#seminarModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advocacy Program Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bullhorn fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title fw-semibold">Advocacy Programs</h5>
+                            <p class="card-text">We run advocacy programs promoting digital literacy, ethical hacking, and responsible IT usage to build an informed tech community.</p>
+                            <!-- Button to open modal -->
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#advocacyModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IT Services Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title fw-semibold">IT Services</h5>
+                            <p class="card-text">Providing technical support such as Windows installation, software setup, troubleshooting, and system maintenance for students and faculty.</p>
+                            <!-- Button to open modal -->
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#itServicesModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Seminar Details -->
+    <div class="modal fade" id="seminarModal" tabindex="-1" aria-labelledby="seminarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="seminarModalLabel">Seminars</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our seminars focus on the latest advancements in the IT industry, such as artificial intelligence, machine learning, cloud computing, cybersecurity, and more. These sessions provide students and professionals with valuable insights and practical knowledge to stay ahead in the rapidly evolving tech world.</p>
+                    <img src="https://imgur.com/tvPj9Sl.jpg" class="img-fluid" alt="Seminar Detail Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Advocacy Program Details -->
+    <div class="modal fade" id="advocacyModal" tabindex="-1" aria-labelledby="advocacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="advocacyModalLabel">Advocacy Programs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our advocacy programs aim to promote digital literacy among students and faculty, focusing on responsible and ethical use of technology. We conduct workshops, seminars, and awareness campaigns to inspire a safer, more informed tech community.</p>
+                    <img src="https://imgur.com/4mXxG8p.jpg" class="img-fluid" alt="Advocacy Program Detail Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for IT Services Details -->
+    <div class="modal fade" id="itServicesModal" tabindex="-1" aria-labelledby="itServicesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="itServicesModalLabel">IT Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>We offer a wide range of IT services to students and faculty, including software installation, hardware troubleshooting, system setup, and general technical support. Our goal is to ensure that everyone in the campus community has access to the resources they need to succeed in their studies and research.</p>
+                    <img src="https://imgur.com/axQiLGc.jpg" class="img-fluid" alt="IT Services Detail Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p class="text-custom">&copy; 2025 CST ACM Tech Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
